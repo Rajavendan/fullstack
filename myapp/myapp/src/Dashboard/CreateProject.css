@@ -1,0 +1,142 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px; /* Sidebar width */
+  height: 100%; /* Sidebar height to cover the full page */
+  background-color: #a4c0e4; /* Sidebar background color matching the theme */
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000; /* Ensure the sidebar stays on top */
+}
+
+.profile-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-nav li {
+  margin: 20px 0;
+}
+
+.sidebar-nav a {
+  text-decoration: none;
+  color: #2215d8; /* Text color similar to the theme */
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.sidebar-nav .active-tab {
+  background-color: #5ca9d6; /* Active tab color */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.main-content {
+  padding-left: 180px; /* Padding between the content and the sidebar */
+}
+
+.create-project-container {
+  width: 100%; /* Use the available width of the main-content */
+  max-width: 900px; /* Limit the maximum width for better readability */
+  background-color: #d6e0f0; /* Slightly different shade of blue for the form background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for better form definition */
+}
+
+form {
+  width: 100%;
+}
+
+h3 {
+  color: #7d83ba; /* Heading color similar to theme */
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #4d4b66; /* Label color matching theme */
+}
+
+input[type="text"], select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #b0b8d2;
+  border-radius: 5px;
+  background-color: #f7f8fc; /* Input background color similar to theme */
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #5ca9d6; /* Submit button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #498db5; /* Darker shade on hover */
+}
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.popup h3 {
+  margin: 0 0 10px;
+}
+
+.popup button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background: #0056b3;
+}

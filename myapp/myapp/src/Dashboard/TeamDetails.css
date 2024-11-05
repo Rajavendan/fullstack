@@ -1,0 +1,132 @@
+/* Sidebar styling */
+.sidebar {
+    background-color: rgb(159, 199, 226);
+    width: 17%; /* Sidebar width */
+    height: 100vh; /* Full height of the viewport */
+    padding: 20px;
+    position: fixed; /* Fixed position to stick to the side */
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.profile-section {
+    position: absolute;
+    top: 20px; /* Positioning near the top */
+    left: 20px; /* Positioning near the left edge */
+    text-align: center;
+    width: calc(100% - 40px); /* Adjusted width to fit within the sidebar */
+}
+
+/* Profile picture */
+.profile-pic {
+    width: 80px !important; /* Fixed width */
+    height: 80px !important; /* Fixed height */
+    border-radius: 50%;
+    object-fit: cover; /* Ensure the image fits within the circle */
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px; /* Spacing above the name */
+}
+
+/* Sidebar navigation styling */
+.sidebar-nav ul {
+    color: #7f3c8d;
+    font-weight: bold;
+    cursor: pointer;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 150px; /* Spacing below the profile section */
+}
+
+.sidebar-nav ul li {
+    margin: 25px 0;
+    font-size: 1.2rem;
+}
+
+.sidebar-nav ul li a {
+    text-decoration: none;
+    color: #7f3c8d;
+    font-weight: bold;
+}
+
+.sidebar-nav ul li.active-tab {
+    background-color: #18aee0;
+    padding: 10px;
+    border-radius: 15px;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Main content styling */
+.dashboard-container {
+    display: flex;
+    margin-left: 10%; /* Align content next to the sidebar */
+    padding: 20px;
+}
+
+.main-content {
+    width: 100%;
+    padding: 2px;
+}
+
+/* Project Summary Container */
+.project-summary-container {
+    background-color: rgb(159, 199, 226);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space below the summary */
+    text-align: left; /* Align text to the left for better readability */
+}
+
+.project-summary-container h3 {
+    color: #9a4fab;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.project-summary-container p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Project Cards Container */
+.project-cards-container {
+    margin-top: 65px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-gap: 30px;
+}
+
+.project-card {
+    display: grid;
+    background-color: rgb(159, 199, 226);
+    padding:10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    color: #9a4fab;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.project-card p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Go back link styling */
+.go-back a {
+    text-decoration: none;
+    color: #7f3c8d;
+    font-weight: bold;
+}

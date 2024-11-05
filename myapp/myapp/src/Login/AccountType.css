@@ -1,0 +1,43 @@
+.account-type-container {
+  text-align: center;
+  padding-top: 0px;
+  padding: 20px;
+  background-color: rgb(159, 199, 226); /* Light gray background */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 400px; /* Match the width of the login container */
+  margin: 100px auto; /* Centering the container */
+}
+
+.logo img {
+  position: relative;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.account-type-button {
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px; /* Rounded corners for buttons */
+  background-color: #ffffff; /* White background for buttons */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for buttons */
+}
+
+.account-type-button img {
+  width: 120px; /* Increased width */
+  height: 120px; /* Increased height */
+  margin-bottom: 5px; /* Reduced margin at the bottom */
+}
+
+.account-type-button p {
+  margin-top: 5px; /* Reduced top margin */
+}
+
+.h2 {
+  margin: 0px;
+}
